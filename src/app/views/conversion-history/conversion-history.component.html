@@ -1,0 +1,20 @@
+<div class="background">
+  <div class="pickar-logo-white">
+    <img src="assets/img/pickar_logo_white.png">
+  </div>
+  <div>
+    <a routerLink="/form"><span class="button-go-back"> < Go back </span></a>
+  </div>
+  <div class="conversion-history">
+    <div class="names">
+      <span class="name-value">Date</span>
+      <span class="name-value">From</span>
+      <span class="name-value">To</span>
+    </div>
+    <div *ngFor="let item of currencyConversionHistory" class="conversion">
+      <span class="conversion-value">{{item.createdAt}}</span>
+      <span class="conversion-value">{{item.fromAmount | number:'1.2-6'}} {{" " + item.from}}</span>
+      <span class="conversion-value">{{item.toAmount | number:'1.2-6'}} {{" " + item.to}}</span>
+    </div>
+  </div>
+</div>

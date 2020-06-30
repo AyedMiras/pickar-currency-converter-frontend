@@ -1,0 +1,246 @@
+.pickar-logo-white {
+  height: 35px;
+  width: 99.8px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.background-upper-half {
+  height: 500px;
+  width: 100%;
+  background-color: #363A3E;
+}
+.headline {
+  box-sizing: border-box;
+  height: 47px;
+  max-width: 800px;
+  width: auto;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+.converter {
+  box-sizing: border-box;
+  height: 400px;
+  width: auto;
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+  margin: -200px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-box {
+  box-sizing: border-box;
+  height: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 45px 0px 45px;
+}
+.dropdown-box-from {
+  box-sizing: border-box;
+  height: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 45px 0px 45px ;
+}
+
+.switcher-box {
+  height: 20px;
+  width: auto;
+  margin-left: 45px;
+}
+.dropdown-box-to {
+  box-sizing: border-box;
+  height: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -20px 45px 0px 45px ;
+}
+
+.name {
+  height: 14px;
+  width: 43px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.input-field {
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(54,58,62,0.08);
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  border-style:solid;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown-field {
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  border-style:solid;
+  padding-left: 15px;
+  appearance: none;
+  -moz-appearance: none;
+  -wiz-appearance: none;
+  background: rgba(54, 58, 62, 0.08) url('../../../assets/img/Path.png') no-repeat right 15px bottom 15px;
+}
+
+.switcher {
+  float: right;
+  padding-right: 60px;
+  padding-top: 5px;
+  position: relative;
+  z-index: 100;
+}
+
+.button-box {
+  display: flex;
+  height: 40px;
+  max-width: 700px;
+  border-radius: 8px;
+  background-color: #FF4F54;
+  width: auto;
+  margin: 25px 45px 0px 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-value {
+  height: 19px;
+  width: 57px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.button-box:disabled {
+  background-color: #FFcccc;
+}
+.result {
+  height: 150px;
+  max-width: 600px;
+  padding-top: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.left-result {
+  height: 23px;
+  max-width: 300px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+}
+.right-result {
+  height: 47px;
+  max-width: 500px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  word-wrap: break-word;
+}
+.background-lower-half {
+  width: auto;
+  height: 250px
+}
+.button-view-history-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.button-view-history {
+  height: 14px;
+  width: 136px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  .converter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-top: -75px;
+    padding: 20px;
+  }
+  .field-box {
+    flex: 1;
+    margin: 0 20px 0 20px;
+    min-width: 0;
+  }
+  .dropdown-box-from {
+    flex: 1;
+    margin: 0 20px 0 20px;
+  }
+  .dropdown-box-to {
+    flex: 1;
+    margin: 0 20px 0 20px;
+  }
+  .switcher-box {
+    margin: 25px 0 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-box {
+    flex: 1;
+    margin: 22px 20px 0 20px;
+  }
+  .switcher {
+    float: none;
+    padding-right: unset;
+  }
+  .background-upper-half {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .converter {
+    max-width: 900px;
+  }
+  .button-view-history-container {
+    max-width: 1000px;
+    margin-top: -75px;
+    margin-left: 200px;
+  }
+  .result {
+    margin-top: 50px;
+  }
+}
+

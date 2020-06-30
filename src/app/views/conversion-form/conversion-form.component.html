@@ -1,0 +1,45 @@
+<div>
+  <div class="background-upper-half">
+    <div class="pickar-logo-white">
+      <img src="assets/img/pickar_logo_white.png">
+    </div>
+    <div class="headline">
+      <span>Convert currencies in real-time</span>
+    </div>
+  </div>
+  <div class="converter">
+    <div class="field-box">
+      <label class="name">Amount</label>
+      <input class="input-field" ngModel maxlength="15" [(ngModel)]="amount">
+    </div>
+    <div class="dropdown-box-from">
+      <label class="name">From</label>
+      <select class="dropdown-field" [(ngModel)]="from">
+        <option *ngFor="let currency of currencies">{{currency}}</option>
+      </select>
+    </div>
+    <div class="switcher-box">
+      <div class="switcher" (click)="switch()">
+        <img src="assets/img/Switcher.png">
+      </div>
+    </div>
+    <div class="dropdown-box-to">
+      <label class="name">To</label>
+      <select class="dropdown-field" [(ngModel)]="to">
+        <option *ngFor="let currency of currencies">{{currency}}</option>
+      </select>
+    </div>
+    <button [disabled]="from !== 'USD'" type="submit" class="button-box" (click)="convertCurrency()">
+      <span class="button-value">Convert</span>
+    </button>
+  </div>
+  <div class="background-lower-half">
+    <div class="button-view-history-container">
+      <a routerLink="/history"><span class="button-view-history">View conversion history ></span></a>
+    </div>
+    <div *ngIf="result" class="result">
+      <div class="left-result"><span>{{resultBoxAmount + ' ' + resultBoxFrom + ' ='}}</span></div>
+      <div class="right-result"><span>{{result | number:'1.2-6' }} {{' ' + resultBoxTo}}</span></div>
+    </div>
+  </div>
+</div>

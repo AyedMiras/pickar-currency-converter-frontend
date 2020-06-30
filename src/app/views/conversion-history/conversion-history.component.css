@@ -1,0 +1,78 @@
+:host {
+  overflow: auto;
+  min-height: 100vh;
+  display: block;
+}
+.pickar-logo-white {
+  height: 35px;
+  width: 100px;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+.background {
+  overflow: auto;
+  min-height: 100vh;
+  display: block;
+  width: auto;
+  background-color: #363A3E;
+}
+.button-go-back {
+  box-sizing: border-box;
+  height: 14px;
+  width: 53px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 25px;
+}
+.conversion-history {
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.names {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.name-value{
+  height: 14px;
+  opacity: 0.5;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.conversion-value {
+  height: 60px;
+  color: #363A3E;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.conversion {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
